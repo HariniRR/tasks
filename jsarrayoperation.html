@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<h2>JS Array operations</h2>
+<script>
+array= ["Violet", "Orange", "Red", "Yellow","purple","Lavender","Black"];
+document.write("<u>Actual Array:</u><br>");
+document.write(array ,"<br><br>");
+
+//adding elements
+
+array.unshift(45, "doll");
+document.write("<u>Adding Elements: using unshift()</u><br>");
+document.write(array ,"<br><br>");
+
+
+ array.push("Pink", "White");
+ document.write("<u>Adding Elements: using push()</u><br>");
+ document.write(array,"<br><br>");
+
+ //deleting elements
+
+
+ array.pop("White");
+ document.write("<u>Deleting Elements: using pop()</u><br>");
+ document.write(array,"<br><br>");
+
+ //slicing elements
+
+ array2= array.slice(3,8);
+ document.write("<u>Slicing Elements: using slice()</u><br>");
+ document.write("3,8:"+array2,"<br><br>");
+
+ //splicing elements(add and replace)
+
+ 
+ array.splice(6,0,"Blue","Brown");
+ document.write("<u>Splicing Elements: using splice() for adding</u><br>");
+ document.write(array,"<br><br>");
+
+
+ array.splice(5,3,"Green","Skyblue","Grey","yellow");
+ document.write("<u>Splicing Elements: using splice() for replacing</u><br>");
+ document.write(array,"<br><br>");
+
+ //finding elements
+
+
+ array.indexOf("Pink")
+ document.write("<u>Finding Elements Pink: using indexOf()</u><br>");
+ document.write(array.indexOf("Skyblue") +"<br><br>");
+
+
+ 
+ document.write("<u>Finding Element pink: using lastIndex()</u><br>");
+ document.write(array.lastIndex(1,4));
+ 
+</script>
+</html>
